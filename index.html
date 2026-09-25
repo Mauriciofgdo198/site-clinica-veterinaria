@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Vet — Cuidar também é um ato de amor</title>
+<meta name="description" content="Clínica veterinária com cuidado, carinho e atenção para cada patinha e cada focinho.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="pular" href="#servicos">Pular para o conteúdo</a>
+
+<!-- HEADER -->
+<header class="header">
+  <a class="marca" href="#inicio" aria-label="Clínica Vet, início">
+    <img src="assets/logo/logo-focinho.png" alt="" width="64" height="48">
+    <span><strong>Clínica Vet</strong><small>Saúde e bem-estar em todas as fases</small></span>
+  </a>
+  <nav class="nav" aria-label="Principal">
+    <a href="#inicio" aria-current="page">Início</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#equipe">Equipe</a><a href="#contato">Contato</a>
+  </nav>
+  <a class="btn btn--linha header__cta" href="#contato">Agendar consulta</a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu"><span></span><span></span></button>
+</header>
+<div id="menu-mobile" class="menu-mobile" hidden>
+  <p class="manuscrito">Vem cuidar com a gente</p>
+  <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#equipe">Equipe</a><a href="#contato">Contato</a>
+  <a class="btn btn--claro" href="#contato">Agendar consulta</a>
+</div>
+
+<main>
+<!-- 1. HERO -->
+<section class="hero" id="inicio">
+  <img class="hero__imagem" src="assets/illustrations/hero.webp" width="1672" height="941" alt="Cachorro caramelo sorrindo ao lado de um gato malhado, ambos olhando para cima" fetchpriority="high">
+  <div class="hero__veu" aria-hidden="true"></div>
+  <span class="poeira" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+  <div class="hero__texto">
+    <h1 class="manuscrito">Cuidar também é um ato de amor <span class="coracao">♡</span></h1>
+    <p>Aqui, cada patinha e cada focinho recebe o cuidado, carinho e atenção que merecem.</p>
+    <a class="btn btn--claro" href="#contato">Agendar consulta <span class="seta">›</span></a>
+  </div>
+  <p class="nota nota--hero manuscrito">Eles confiam em nós! ♡</p>
+  <a class="rolar" href="#servicos" aria-label="Rolar para os serviços"><span></span></a>
+  <svg class="onda" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40C260 90 520 0 820 30s420 50 620 5V90H0z" fill="#f1ead9"/></svg>
+</section>
+
+<!-- 3. SERVIÇOS -->
+<section class="servicos" id="servicos">
+  <h2 class="manuscrito sublinhado" data-reveal>Nossos serviços</h2>
+  <ul id="lista-servicos" class="servicos__lista"></ul> <!-- preenchido por js/data/services.js -->
+</section>
+
+<!-- 4. POR QUE ESCOLHER -->
+<section class="porque" id="sobre">
+  <div class="porque__pincelada">
+    <img class="porque__imagem" src="assets/illustrations/gato-banner.webp" width="1774" height="887" alt="Gato preto e branco apoiado na mesa, olhando com carinho" loading="lazy">
+    <div class="porque__intro">
+      <p class="rotulo">Por que escolher nossa clínica?</p>
+      <h2 class="manuscrito">Porque eles são parte da família. ♡</h2>
+    </div>
+    <ul class="diferenciais" id="equipe">
+      <li><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="16" r="8"/><path d="M8 42c2-10 8-14 16-14s14 4 16 14"/></svg><div><h3>Equipe especializada</h3><p>Profissionais apaixonados por animais.</p></div></li>
+      <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l16 6v12c0 10-7 17-16 20C15 40 8 33 8 23V11z"/><path d="M17 24l5 5 9-10"/></svg><div><h3>Estrutura completa</h3><p>Tecnologia e conforto para o melhor atendimento.</p></div></li>
+      <li><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40C8 28 6 18 12 12c5-4 10-2 12 3 2-5 7-7 12-3 6 6 4 16-12 28z"/></svg><div><h3>Atendimento humanizado</h3><p>Respeito, carinho e escuta em cada detalhe.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 5. LAR TEMPORÁRIO -->
+<section class="lar">
+  <img class="animal animal--lar" src="assets/animals/dog-lounge.png" alt="Ilustração de um cachorro marrom sorrindo">
+  <p class="nota nota--lar manuscrito">Saúde, conforto e muito amor ♡</p>
+  <div class="lar__texto">
+    <p class="rotulo">Mais do que uma clínica</p>
+    <h2 class="manuscrito">Um lar temporário para o seu pet.</h2>
+    <p>Nosso espaço foi pensado para oferecer segurança, conforto e bem-estar em cada momento da jornada.</p>
+    <a class="btn btn--linha-escuro" href="#contato">Conheça nossa estrutura <span class="seta">›</span></a>
+  </div>
+</section>
+
+<!-- 6. EXPERIÊNCIA -->
+<section class="experiencia" aria-labelledby="exp-titulo">
+  <h2 id="exp-titulo" class="rotulo">Mais do que consultas</h2>
+  <div class="palavras">
+    <p class="w w1 manuscrito" data-reveal>Cuidado</p>
+    <p class="w w2 manuscrito" data-reveal>Carinho</p>
+    <p class="w w3 manuscrito" data-reveal>Confiança</p>
+    <p class="w w4 manuscrito" data-reveal>Bem-estar</p>
+    <p class="w w5 manuscrito" data-reveal>Vida</p>
+    <p class="w w6 manuscrito" data-reveal>Família</p>
+  </div>
+  <p class="frase">Aqui a gente cuida do seu pet como cuida da própria casa: com paciência, com tempo e com o coração aberto.</p>
+</section>
+
+<!-- 7. CTA FINAL -->
+<section class="final" id="contato">
+  <div class="final__pincelada">
+    <div class="final__texto">
+      <p class="rotulo">Vamos cuidar juntos?</p>
+      <h2 class="manuscrito sublinhado" data-reveal>Seu pet merece o melhor!</h2>
+      <a class="btn btn--claro" href="https://wa.me/5500000000000" rel="noopener">Agendar consulta <span class="seta">›</span></a> <!-- SUBSTITUIR: WhatsApp/telefone real -->
+    </div>
+  </div>
+  <footer><p>© Clínica Vet · Endereço, horários e telefone aqui</p></footer>
+</section>
+</main>
+<script src="js/data/services.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
