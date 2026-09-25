@@ -21,6 +21,12 @@
   menu.addEventListener('click', e => { if (e.target.closest('a')) toggle(false); });
   addEventListener('keydown', e => { if (e.key === 'Escape') toggle(false); });
 
+  const newsletter = $('#newsletter-form');
+  newsletter?.addEventListener('submit', e => {
+    e.preventDefault();
+    $('#newsletter-status').textContent = 'E-mail validado. Conecte uma lista de newsletter para concluir a inscrição.';
+  });
+
   const io = new IntersectionObserver(es => es.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('visivel'); io.unobserve(e.target); }
   }), { threshold: .25 });
